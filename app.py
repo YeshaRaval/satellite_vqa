@@ -3,7 +3,6 @@ import replicate
 import os
 from transformers import AutoTokenizer
 
-# image = open(r"C:\Users\Ishaan\Downloads\haze1k\Distributed_haze1k\train\target\885.png", "rb")
 image = st.file_uploader("Upload a satellite image", type=["png", "jpg", "jpeg"])
 if image:
     st.image(image, caption="Satellite Image", use_column_width=True,)
